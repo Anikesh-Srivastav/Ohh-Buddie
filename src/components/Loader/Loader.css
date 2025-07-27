@@ -1,0 +1,61 @@
+section {
+    width: 100vh;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+}
+
+h1 span {
+    color: rgba(216, 221, 226, 0.507);
+}
+
+p {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(98, 103, 109, 0.582);
+    text-align: justify;
+    line-height: 130%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+
+.about h1 {
+    color: black;
+}
+
+.sticky {
+   background-color: #161616; 
+}
+
+.hand-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    transform-origin: center center;
+    transform-style: preserve-3d;
+    will-change: transform;
+    z-index: 2;
+}
+

@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  width: 100vh;
+  height: 1000vh;
+  font-family:  'PP Neue Montreal';
+  color: #FFFFFF;
+}
