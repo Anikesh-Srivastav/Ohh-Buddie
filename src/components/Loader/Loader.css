@@ -97,3 +97,8 @@ img {
     font-size: 10vw;
     letter-spacing: 0.03em;
 }
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
