@@ -102,3 +102,104 @@ img {
     width: 0px;
     background: transparent;
 }
+
+/* Tablet: up to 1024px */
+@media (max-width: 1024px) {
+    :root {
+      --hand-scale: 1;        /* 75% of desktop base */
+      --intro-width-ratio: 1; /* relative width */
+      --heading-size: 26px;
+      --body-font-size: 15px;
+    }
+  
+    .hand-container {
+      width: calc(800px * var(--hand-scale)); /* becomes 600px */
+      height: calc(920px * var(--hand-scale)); /* becomes 690px */
+    }
+  
+    .hand {
+      width: calc(5.5% / 1.2); /* a bit larger in relative terms */
+      height: 48%;
+    }
+  
+    .intro {
+      position: absolute;
+      right: 50%;
+      top: 49%;
+      width: calc(22.5% * var(--intro-width-ratio));
+      transform: translateX(-50%);
+      z-index: 3;
+    }
+  
+    h1 {
+      font-size: var(--heading-size);
+    }
+  
+    p {
+      font-size: var(--body-font-size);
+      line-height: 1.35;
+    }
+  
+    .intro p {
+      margin-top: 0.5em;
+      transform: none;
+      opacity: 0;
+    }
+  
+    .website-content h1 {
+      font-size: 12vw;
+    }
+  }
+  
+  /* Mobile: up to 768px */
+  @media (max-width: 768px) {
+    :root {
+      --hand-scale: 0.44;         /* 55% of desktop base */
+      --intro-width-ratio: 2;   /* more full-width on narrow screens */
+      --heading-size: 22px;
+      --body-font-size: 14px;
+    }
+  
+    .hand-container {
+      width: calc(800px * var(--hand-scale)); /* ~440px */
+      height: calc(920px * var(--hand-scale)); /* ~506px */
+    }
+  
+    .hand {
+      width: 7%;
+      height: 45%;
+    }
+  
+    .intro {
+      position: absolute;
+      left: 53%;
+      top: 15%;
+      width: calc(22.5% * var(--intro-width-ratio));
+      transform: translateX(-50%);
+      z-index: 3;
+    }
+  
+    h1 {
+      font-size: var(--heading-size);
+    }
+  
+    p {
+      font-size: var(--body-font-size);
+      line-height: 1.3;
+    }
+  
+    .intro p {
+      margin-top: 0.4em;
+      transform: none;
+      opacity: 1;
+      position: relative;
+      top: 300px; 
+      right: 30px;
+      opacity: 0;
+    }
+  
+    .website-content h1 {
+      font-size: 14vw;
+    }
+  }
+  
